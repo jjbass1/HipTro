@@ -1,3 +1,53 @@
+header {
+  display: flex;
+  width: 100%; }
 
+.menu {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: absolute; }
+
+.logo {
+  width: 50%; }
+
+header > .menu > img {
+  width: 40%; }
+
+header > .logo > img {
+  width: 80%;
+  display: block;
+  margin-top: 2%;
+  margin-left: 4%; }
+
+/* NAV BAR STYLING*/
+nav {
+  display: flex;
+  flex-direction: column; }
+
+header nav ul {
+  list-style: none;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  background-color: green;
+  display: none; }
+
+header nav ul li {
+  text-align: center; }
+
+header nav ul li a {
+  text-decoration: none;
+  display: block;
+  padding: 4%;
+  font-size: 90%; }
+
+.show {
+  display: block; }
+
+#test {
+  width: 100%;
+  position: relative; }
 
 /*# sourceMappingURL=styles.css.map */
