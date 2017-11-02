@@ -11,7 +11,7 @@
 <header class="header1">
     <div class="logo">
         <a href="index.html">
-            <img src="images/HIPTROlogo_v.3.svg" alt="Logo">
+            <img id="logo" src="images/HIPTROlogo_v.3.svg" alt="Logo">
         </a>
     </div>
     <nav class="navbar">
@@ -27,60 +27,68 @@
             </li>
         </ul>
     </nav>
+    <img id="shoppingcart" src="images/cart.png" alt="shoppingcart">
 </header>
 
 <!-- MAIN INDHOLD-->
-<main>
+<main class="forsidemain">
 
     <!-- LINK TIL PRODUKTER -->
-    <section class="picbox">
-        <img class="picsettings" src="">
-        <section class="picboxtext">
-
-        </section>
+    <section class="linkfront pic1">
+        <a href="shop.html">
+            <img src="images/shop.front.jpg" alt="link til shop">
+        </a>
     </section>
 
     <!-- LINK TIL DIY -->
-    <section class="picbox">
-        <img class="picsettings" src="">
-        <section class="picboxtext">
-
-        </section>
+    <section class="linkfront pic2">
+        <a href="diy.html">
+            <img src="images/DIY.front.jpg" alt="link til DIY">
+        </a>
     </section>
 
-    <!-- PRODUKTER SLIDER -->
-    <section class="sliderfront">
+
+    <!-- POPULÆRT PRODUKT -->
+    <section class="produktfront">
         <!--TEKST-->
-        <h2>
-
-        </h2>
+        <h1>
+            Trender lige nu
+        </h1>
+        <a href="shop.html">
+            <img src="images/produkt.bord.jpg" alt="Poplært bord">
+        </a>
+        <h3>
+            Raw Sofabord - sæt m. 2 stk.
+        </h3>
+        <p>
+            Top i olieret eg / Ben i olieret eg
+        </p>
         <!--SLIDER-->
-        <section class="produktslider">
-            <img class="sliderpic" src="">
-            <img class="sliderpic" src="">
-            <img class="sliderpic" src="">
-            <img class="sliderpic" src="">
-            <img class="sliderpic" src="">
-        </section>
-    </section>
 
-    <!--OM OS LINK -->
-    <section class="picbox">
-        <img class="picsettings" src="">
-        <section class="picboxtext">
-
-        </section>
     </section>
 
     <!-- UPLOAD INSPIRATION -->
     <section class="upload">
         <!--OVERSKRIFT-->
-        <h2>Upload Tips & Tricks</h2>
+        <h1>Upload Tips & Tricks</h1>
         <!--UPLOAD FORM-->
         <form>
-            <input type="text" name="name" value="Navn"><br>
-            <input type="email" name="email" value="Mail"><br>
-            <input type="text" name="headline" value="Titel"><br>
+            <div class="formlabel">
+                <label for="name">Navn</label>
+            </div>
+            <input type="text" name="name"><br>
+            <div class="formlabel">
+                <label for="name">Mail</label>
+            </div>
+            <input type="email" name="email"><br>
+            <div class="formlabel">
+                <label for="name">Titel</label>
+            </div>
+            <input type="text" name="headline"><br>
+            <div class="formlabel">
+                <label for="name">Beskrivelse</label>
+            </div>
+            <textarea id="description"></textarea><br>
             <input type="file" name="file"><br>
             <input type="submit" value="Indsend">
         </form>
@@ -89,6 +97,20 @@
 </main>
 
 <footer>
+    <article class="kontaktfelt">
+        <h3>Kontakt os</h3>
+        <p>
+            <b>Tlf.:</b><a href="tel:+4540434905" class="kontaktlink"> +45 40434905</a><br>
+            <b>Mail:</b><a href="mailto:jonas@jonasbonde.dk?Subject=Hello%20again" class="kontaktlink"> jonas@jonasbonde.dk</a><br>
+            <b>Adresse:</b> Staldgaarden 21, 1. <br>
+        </p>
+    </article>
+    <div class="logo">
+        <a href="index.html">
+            <img id="footerimage" src="images/HIPTROlogo_v.3.svg" alt="Logo">
+        </a>
+    </div>
+
 
 </footer>
 

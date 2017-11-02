@@ -1,3 +1,7 @@
+@charset "UTF-8";
+body {
+  margin: 0; }
+
 /* HEADER STYLING */
 .header1 {
   display: flex;
@@ -5,7 +9,8 @@
   .header1 img {
     width: 40%;
     display: block;
-    margin: auto; }
+    margin: auto;
+    margin-top: 3%; }
 
 /* STYLER NAV BAR*/
 .navul {
@@ -27,5 +32,163 @@
 
 .navliactive a {
   font-weight: bold; }
+
+#shoppingcart {
+  display: none; }
+
+main {
+  background-color: #ededed;
+  padding: 3%; }
+
+.linkfront a img {
+  width: 100%; }
+
+.linkfront {
+  margin-bottom: 2%; }
+
+.produktfront {
+  text-align: center;
+  font-family: "Apex New"; }
+  .produktfront img {
+    width: 60%; }
+  .produktfront p {
+    color: #727272;
+    margin: 0; }
+  .produktfront h3 {
+    margin: 1%; }
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 2%;
+  padding: 0; }
+  form input {
+    width: 80%;
+    margin: auto; }
+  form textarea {
+    width: 80%;
+    margin: auto;
+    border: none; }
+  form .formlabel {
+    width: 80%;
+    margin: auto;
+    font-family: "Apex New";
+    margin-top: 0; }
+  form #description {
+    height: 100px; }
+  form input[type=file] {
+    background-color: #cccccc;
+    border: none;
+    color: black;
+    width: 40%;
+    margin: auto;
+    padding: 2%;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer; }
+  form input[type=submit] {
+    background-color: #cccccc;
+    border: none;
+    color: black;
+    width: 20%;
+    margin: auto;
+    padding: 1%;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer; }
+
+.forsidemain h1 {
+  font-family: "American Purpose Casual 01";
+  padding-top: 3%;
+  margin-bottom: 1%;
+  font-size: xx-large;
+  text-align: center; }
+
+footer .kontaktfelt {
+  width: 60%;
+  margin: auto; }
+  footer .kontaktfelt .kontaktlink {
+    text-decoration: none;
+    color: black; }
+footer h3 {
+  font-family: "American Purpose Casual 01";
+  margin: 5%;
+  text-align: center;
+  font-size: x-large; }
+footer p {
+  font-family: "Apex New";
+  margin-top: 0; }
+footer img {
+  display: flex;
+  width: 50%;
+  margin: auto;
+  padding-bottom: 3%; }
+
+@supports (grid-area: auto) {
+  /*VISES KUN PÅ TABLET*/
+  @media screen and (min-width: 600px) {
+    .header1 {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin: 1% 3%; }
+      .header1 .logo {
+        display: flex; }
+        .header1 .logo img {
+          width: 150px; }
+      .header1 #shoppingcart {
+        display: block;
+        width: 70px;
+        margin: 0;
+        padding-left: 60px; }
+      .header1 .navbar a {
+        font-size: x-large; }
+
+    footer {
+      margin: 1% 3%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-content: center; }
+      footer .kontaktfelt {
+        margin: 0; }
+        footer .kontaktfelt h3 {
+          text-align: left;
+          margin-left: 0;
+          margin-bottom: 1%; }
+        footer .kontaktfelt p {
+          font-size: large; }
+      footer #footerimage {
+        display: flex;
+        margin: auto 0px auto auto;
+        padding: 0;
+        width: 150px; }
+      footer .logo {
+        display: flex;
+        align-items: center; }
+
+    .forsidemain {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-areas: "pic1 pic2" "produktfront produktfront" "upload upload"; }
+      .forsidemain .pic1 {
+        grid-area: pic1;
+        margin-right: 3%; }
+      .forsidemain .pic2 {
+        grid-area: pic2;
+        margin-left: 3%; }
+      .forsidemain .produktfront {
+        grid-area: produktfront; }
+      .forsidemain .upload {
+        grid-area: upload; } }
+  @media screen and (min-width: 1000px) {
+    .forsidemain {
+      display: grid;
+      grid-template-columns: 50% 16.67% 33.33%;
+      grid-template-areas: "pic1 pic2 pic2" "upload upload produktfront"; }
+      .forsidemain .produktfront img {
+        width: 90%; } } }
 
 /*# sourceMappingURL=styles.css.map */
