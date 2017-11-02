@@ -1,53 +1,31 @@
-header {
-  display: flex;
-  width: 100%; }
-
-.menu {
-  width: 50%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  position: absolute; }
-
-.logo {
-  width: 50%; }
-
-header > .menu > img {
-  width: 40%; }
-
-header > .logo > img {
-  width: 80%;
-  display: block;
-  margin-top: 2%;
-  margin-left: 4%; }
-
-/* NAV BAR STYLING*/
-nav {
+/* HEADER STYLING */
+.header1 {
   display: flex;
   flex-direction: column; }
+  .header1 img {
+    width: 40%;
+    display: block;
+    margin: auto; }
 
-header nav ul {
-  list-style: none;
-  flex-direction: row;
+/* STYLER NAV BAR*/
+.navul {
+  list-style-type: none;
   margin: 0;
   padding: 0;
-  background-color: green;
-  display: none; }
+  overflow: hidden;
+  display: flex;
+  justify-content: center; }
 
-header nav ul li {
+.navli {
   text-align: center; }
+  .navli a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #3a3a3a;
+    font-family: "Apex New"; }
 
-header nav ul li a {
-  text-decoration: none;
-  display: block;
-  padding: 4%;
-  font-size: 90%; }
-
-.show {
-  display: block; }
-
-#test {
-  width: 100%;
-  position: relative; }
+.navliactive a {
+  font-weight: bold; }
 
 /*# sourceMappingURL=styles.css.map */
