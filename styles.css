@@ -1,7 +1,4 @@
 @charset "UTF-8";
-@font-face {
-  font-family: 'Apex New';
-  scr: url("fonts/Apexnew.woff") format("woff") url("fonts/Apexnew.woff2") format("woff2"); }
 body {
   margin: 0; }
 
@@ -31,17 +28,35 @@ body {
     padding: 15px;
     text-decoration: none;
     color: #3a3a3a;
-    font-family: Apexnew, Tahoma, sans-serif; }
+    font-family: "Roboto Slab", Tahoma, sans-serif; }
 
 .navliactive a {
-  font-weight: bold; }
+  background-color: #ededed;
+  border-radius: 10px; }
 
-.maindyi {
+.maindiy {
   text-align: center;
-  width: 300px;
-  border: 5px solid green;
-  padding: 25px;
-  margin: 25px; }
+  width: 100%;
+  padding: 0; }
+  .maindiy h2 {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto Slab", Tahoma, sans-serif; }
+  .maindiy .tekstdiy {
+    padding: 8%; }
+  .maindiy p {
+    font-family: "Roboto Condensed";
+    padding: 0;
+    margin: 0;
+    text-align: left; }
+  .maindiy .w13 p {
+    text-align: center;
+    margin: 2%; }
+  .maindiy .w13 a {
+    font-family: "Roboto Condensed"; }
+
+.white {
+  background-color: white; }
 
 #shoppingcart {
   display: none; }
@@ -58,7 +73,7 @@ main {
 
 .produktfront {
   text-align: center;
-  font-family: Apexnew, Tahoma, sans-serif; }
+  font-family: "Roboto Condensed", Tahoma, sans-serif; }
   .produktfront img {
     width: 60%; }
   .produktfront p {
@@ -83,7 +98,7 @@ form {
   form .formlabel {
     width: 80%;
     margin: auto;
-    font-family: Apexnew, Tahoma, sans-serif;
+    font-family: "Roboto Condensed", Tahoma, sans-serif;
     margin-top: 0; }
   form #description {
     height: 100px; }
@@ -109,7 +124,7 @@ form {
     cursor: pointer; }
 
 .forsidemain h1 {
-  font-family: "American Purpose Casual 01", Tahoma, sans-serif;
+  font-family: "Roboto Slab", Tahoma, sans-serif;
   padding-top: 3%;
   margin-bottom: 1%;
   font-size: xx-large;
@@ -143,7 +158,7 @@ form {
   background-color: white; }
 
 .produkt {
-  font-family: Apexnew, Tahoma, sans-serif;
+  font-family: "Roboto Condensed", Tahoma, sans-serif;
   text-align: center; }
   .produkt .funktioner {
     height: 80px;
@@ -180,12 +195,12 @@ footer .kontaktfelt {
     text-decoration: none;
     color: black; }
 footer h3 {
-  font-family: "American Purpose Casual 01", Tahoma, sans-serif;
+  font-family: "Roboto Slab", Tahoma, sans-serif;
   margin: 5%;
   text-align: center;
   font-size: x-large; }
 footer p {
-  font-family: Apexnew, Tahoma, sans-serif;
+  font-family: "Roboto Condensed", Tahoma, sans-serif;
   margin-top: 0; }
 footer img {
   display: flex;
@@ -280,7 +295,40 @@ footer img {
         .shopmain .sortering select {
           width: 21%; }
         .shopmain .sortering button {
-          width: 20%; } }
+          width: 20%; }
+
+    .maindiy {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-areas: "head head" "w1 w2" "w3 w4" "w5 w6" "w7 w8" "w9 w10" "w11 w12" "w13 w13"; }
+      .maindiy .head {
+        grid-area: head; }
+      .maindiy .w1 {
+        grid-area: w1; }
+      .maindiy .w2 {
+        grid-area: w2; }
+      .maindiy .w3 {
+        grid-area: w4; }
+      .maindiy .w4 {
+        grid-area: w3; }
+      .maindiy .w5 {
+        grid-area: w5; }
+      .maindiy .w6 {
+        grid-area: w6; }
+      .maindiy .w7 {
+        grid-area: w8; }
+      .maindiy .w8 {
+        grid-area: w7; }
+      .maindiy .w9 {
+        grid-area: w9; }
+      .maindiy .w10 {
+        grid-area: w10; }
+      .maindiy .w11 {
+        grid-area: w12; }
+      .maindiy .w12 {
+        grid-area: w11; }
+      .maindiy .w13 {
+        grid-area: w13; } }
   @media screen and (min-width: 1000px) {
     .forsidemain {
       display: grid;
@@ -288,6 +336,8 @@ footer img {
       grid-template-areas: "pic1 pic2 pic2" "upload upload produktfront"; }
       .forsidemain .produktfront img {
         width: 90%; }
+      .forsidemain .produktfront h1 {
+        margin-top: 9%; }
 
     .shopmain {
       display: grid;
@@ -310,13 +360,39 @@ footer img {
       .shopmain .pro7 {
         grid-area: pro7; }
       .shopmain .pro8 {
-        grid-area: pro8; } } }
-.externe {
-  align-self: left;
-  text-align: center;
-  width: 300px;
-  border: 5px solid green;
-  padding: 25px;
-  margin: 25px; }
+        grid-area: pro8; }
+
+    .maindiy {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-areas: "head head head" "w1 w2 w3" "w4 w5 w6" "w7 w8 w9" "w10 w11 w12" "w13 w13 w13"; }
+      .maindiy .head {
+        grid-area: head; }
+      .maindiy .w1 {
+        grid-area: w1; }
+      .maindiy .w2 {
+        grid-area: w2; }
+      .maindiy .w3 {
+        grid-area: w3; }
+      .maindiy .w4 {
+        grid-area: w4; }
+      .maindiy .w5 {
+        grid-area: w5; }
+      .maindiy .w6 {
+        grid-area: w6; }
+      .maindiy .w7 {
+        grid-area: w7; }
+      .maindiy .w8 {
+        grid-area: w8; }
+      .maindiy .w9 {
+        grid-area: w9; }
+      .maindiy .w10 {
+        grid-area: w10; }
+      .maindiy .w11 {
+        grid-area: w11; }
+      .maindiy .w12 {
+        grid-area: w12; }
+      .maindiy .w13 {
+        grid-area: w13; } } }
 
 /*# sourceMappingURL=styles.css.map */
