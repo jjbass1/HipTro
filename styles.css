@@ -112,6 +112,64 @@ form {
   font-size: xx-large;
   text-align: center; }
 
+/*SHOP STYLING*/
+.shopmain {
+  padding: 0px; }
+
+.sortering {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 3%; }
+  .sortering select {
+    width: 80%;
+    margin: 1% auto;
+    border: 1px solid #727272;
+    padding: 1%; }
+  .sortering button {
+    width: 30%;
+    margin: 1% auto;
+    border: 1px solid #727272;
+    padding: 1%; }
+
+.greypro {
+  padding: 3%; }
+
+.whitepro {
+  padding: 3%;
+  background-color: white; }
+
+.produkt {
+  font-family: "Apex New";
+  text-align: center; }
+  .produkt .funktioner {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%; }
+  .produkt img {
+    width: 100%;
+    border-radius: 5px; }
+  .produkt p {
+    color: #727272;
+    margin: 0; }
+  .produkt h2 {
+    margin: 1%; }
+  .produkt .kobknap {
+    width: 16%;
+    display: flex;
+    align-items: center;
+    background-color: #cccccc;
+    border-radius: 5px; }
+    .produkt .kobknap img {
+      width: 90%;
+      display: flex;
+      margin: auto; }
+  .produkt .produktnavn {
+    display: flex;
+    flex-direction: column;
+    margin: auto; }
+
 footer .kontaktfelt {
   width: 60%;
   margin: auto; }
@@ -189,7 +247,30 @@ footer img {
       .forsidemain .produktfront {
         grid-area: produktfront; }
       .forsidemain .upload {
-        grid-area: upload; } }
+        grid-area: upload; }
+
+    .shopmain {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-areas: "sortering sortering" "pro1 pro2" "pro3 pro4" "pro5 pro6" "pro7 pro8"; }
+      .shopmain .sortering {
+        grid-area: sortering; }
+      .shopmain .pro1 {
+        grid-area: pro2; }
+      .shopmain .pro2 {
+        grid-area: pro1; }
+      .shopmain .pro3 {
+        grid-area: pro3; }
+      .shopmain .pro4 {
+        grid-area: pro4; }
+      .shopmain .pro5 {
+        grid-area: pro6; }
+      .shopmain .pro6 {
+        grid-area: pro5; }
+      .shopmain .pro7 {
+        grid-area: pro7; }
+      .shopmain .pro8 {
+        grid-area: pro8; } }
   @media screen and (min-width: 1000px) {
     .forsidemain {
       display: grid;
