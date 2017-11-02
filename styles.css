@@ -31,7 +31,7 @@ body {
     padding: 15px;
     text-decoration: none;
     color: #3a3a3a;
-    font-family: "Apex New", Tahoma, sans-serif; }
+    font-family: Apexnew, Tahoma, sans-serif; }
 
 .navliactive a {
   font-weight: bold; }
@@ -58,7 +58,7 @@ main {
 
 .produktfront {
   text-align: center;
-  font-family: "Apex New", Tahoma, sans-serif; }
+  font-family: Apexnew, Tahoma, sans-serif; }
   .produktfront img {
     width: 60%; }
   .produktfront p {
@@ -83,7 +83,7 @@ form {
   form .formlabel {
     width: 80%;
     margin: auto;
-    font-family: "Apex New", Tahoma, sans-serif;
+    font-family: Apexnew, Tahoma, sans-serif;
     margin-top: 0; }
   form #description {
     height: 100px; }
@@ -143,7 +143,7 @@ form {
   background-color: white; }
 
 .produkt {
-  font-family: "Apex New", Tahoma, sans-serif;
+  font-family: Apexnew, Tahoma, sans-serif;
   text-align: center; }
   .produkt .funktioner {
     height: 80px;
@@ -185,7 +185,7 @@ footer h3 {
   text-align: center;
   font-size: x-large; }
 footer p {
-  font-family: "Apex New", Tahoma, sans-serif;
+  font-family: Apexnew, Tahoma, sans-serif;
   margin-top: 0; }
 footer img {
   display: flex;
