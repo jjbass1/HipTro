@@ -33,6 +33,13 @@ body {
 .navliactive a {
   font-weight: bold; }
 
+.maindyi {
+  text-align: center;
+  width: 300px;
+  border: 5px solid green;
+  padding: 25px;
+  margin: 25px; }
+
 #shoppingcart {
   display: none; }
 
@@ -190,5 +197,12 @@ footer img {
       grid-template-areas: "pic1 pic2 pic2" "upload upload produktfront"; }
       .forsidemain .produktfront img {
         width: 90%; } } }
+.externe {
+  align-self: left;
+  text-align: center;
+  width: 300px;
+  border: 5px solid green;
+  padding: 25px;
+  margin: 25px; }
 
 /*# sourceMappingURL=styles.css.map */
