@@ -1,4 +1,7 @@
 @charset "UTF-8";
+@font-face {
+  font-family: 'Apex New';
+  scr: url("fonts/Apexnew.woff") format("woff") url("fonts/Apexnew.woff2") format("woff2"); }
 body {
   margin: 0; }
 
@@ -28,7 +31,7 @@ body {
     padding: 15px;
     text-decoration: none;
     color: #3a3a3a;
-    font-family: "Apex New"; }
+    font-family: "Apex New", Tahoma, sans-serif; }
 
 .navliactive a {
   font-weight: bold; }
@@ -55,7 +58,7 @@ main {
 
 .produktfront {
   text-align: center;
-  font-family: "Apex New"; }
+  font-family: "Apex New", Tahoma, sans-serif; }
   .produktfront img {
     width: 60%; }
   .produktfront p {
@@ -80,7 +83,7 @@ form {
   form .formlabel {
     width: 80%;
     margin: auto;
-    font-family: "Apex New";
+    font-family: "Apex New", Tahoma, sans-serif;
     margin-top: 0; }
   form #description {
     height: 100px; }
@@ -106,7 +109,7 @@ form {
     cursor: pointer; }
 
 .forsidemain h1 {
-  font-family: "American Purpose Casual 01";
+  font-family: "American Purpose Casual 01", Tahoma, sans-serif;
   padding-top: 3%;
   margin-bottom: 1%;
   font-size: xx-large;
@@ -140,7 +143,7 @@ form {
   background-color: white; }
 
 .produkt {
-  font-family: "Apex New";
+  font-family: "Apex New", Tahoma, sans-serif;
   text-align: center; }
   .produkt .funktioner {
     height: 80px;
@@ -177,12 +180,12 @@ footer .kontaktfelt {
     text-decoration: none;
     color: black; }
 footer h3 {
-  font-family: "American Purpose Casual 01";
+  font-family: "American Purpose Casual 01", Tahoma, sans-serif;
   margin: 5%;
   text-align: center;
   font-size: x-large; }
 footer p {
-  font-family: "Apex New";
+  font-family: "Apex New", Tahoma, sans-serif;
   margin-top: 0; }
 footer img {
   display: flex;
@@ -270,14 +273,44 @@ footer img {
       .shopmain .pro7 {
         grid-area: pro7; }
       .shopmain .pro8 {
-        grid-area: pro8; } }
+        grid-area: pro8; }
+      .shopmain .sortering {
+        flex-direction: row;
+        flex-wrap: wrap; }
+        .shopmain .sortering select {
+          width: 21%; }
+        .shopmain .sortering button {
+          width: 20%; } }
   @media screen and (min-width: 1000px) {
     .forsidemain {
       display: grid;
       grid-template-columns: 50% 16.67% 33.33%;
       grid-template-areas: "pic1 pic2 pic2" "upload upload produktfront"; }
       .forsidemain .produktfront img {
-        width: 90%; } } }
+        width: 90%; }
+
+    .shopmain {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-areas: "sortering sortering sortering" "pro1 pro2 pro3" "pro4 pro5 pro6" "pro7 pro8 ."; }
+      .shopmain .sortering {
+        grid-area: sortering; }
+      .shopmain .pro1 {
+        grid-area: pro1; }
+      .shopmain .pro2 {
+        grid-area: pro2; }
+      .shopmain .pro3 {
+        grid-area: pro3; }
+      .shopmain .pro4 {
+        grid-area: pro4; }
+      .shopmain .pro5 {
+        grid-area: pro5; }
+      .shopmain .pro6 {
+        grid-area: pro6; }
+      .shopmain .pro7 {
+        grid-area: pro7; }
+      .shopmain .pro8 {
+        grid-area: pro8; } } }
 .externe {
   align-self: left;
   text-align: center;
